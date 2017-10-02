@@ -1,0 +1,25 @@
+<nav class="navbar navbar-light bg-light justify-content-between" style="background-color: black">
+  
+  <%= link_to "Alpha Blog", root_path, class: "navbar-brand", id: "logo" %>
+  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="nav navbar-nav">
+      <li><%= link_to "Articles", articles_path %></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Disabled</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          Actions <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><%= link_to "New Article", new_article_path %></li>
+          <li><a href="#">Something else here</a></li>
+        </ul> 
+      </li>
+    </ul>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>
+    </form>
+
+  </div>
+</nav>
